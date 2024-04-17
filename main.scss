@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
-
 @font-face {
 	font-family: 'Mariupol';
 	src: url(./font/Mariupol-Regular.ttf);
@@ -16,6 +14,12 @@
 	font-family: 'Mariupol';
 	src: url(./font/Mariupol-Medium.ttf);
 	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Days One';
+	src: url(./font/DaysOne-Regular.ttf);
+	font-weight: 400;
 }
 
 //   ========== Variable ========
@@ -166,6 +170,7 @@ a {
 		h1 {
 			font-family: $fontsOne;
 			font-size: 64px;
+			font-weight: 400;
 			line-height: 150%;
 		}
 	}
@@ -190,4 +195,153 @@ a {
 	font-size: 18px;
 	font-weight: 700;
 	cursor: pointer;
+}
+
+.services {
+	// .services__container
+
+	&__container {
+		padding: 50px 0 80px;
+	}
+
+	// .services__zone
+
+	&__zone {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	// .services__card
+
+	&__card {
+		flex-basis: 32%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: $blockGray;
+		padding: 56px 23px 56px 46px;
+		position: relative;
+		border-radius: 5px;
+		gap: 20px;
+		margin-top: 45px;
+
+		p {
+			font-family: $fontsOne;
+			font-size: 20px;
+		}
+		// .services__card_box
+
+		&_box {
+			background: $mainWhite;
+			padding: 34px;
+			position: absolute;
+			right: 26px;
+			bottom: 26px;
+			border-radius: 5px;
+			box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	// .services__card4
+
+	&__card4,
+	&__card5 {
+		flex-basis: 49%;
+	}
+}
+.section {
+	&__title {
+		font-family: $fontsOne;
+		font-size: 45px;
+		line-height: 200%;
+		font-weight: 400;
+		font-style: normal;
+	}
+}
+
+.about {
+	background: url(./img/waveBg.svg) no-repeat center center, $mainDark;
+	color: $mainWhite;
+	// .about__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 80px 0 90px;
+		gap: 45px;
+	}
+
+	// .about__title
+
+	&__title {
+		margin-bottom: 12px;
+	}
+
+	// .about__subtitle
+
+	&__subtitle {
+		font-size: 20px;
+		line-height: 125%;
+		margin-bottom: 18px;
+	}
+
+	// .about__desc
+
+	&__desc {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 135%;
+	}
+
+	&__desc:last-child {
+		margin-bottom: 0;
+	}
+
+	// .about__img
+
+	&__img {
+		background: url(./img/Ellipse\ 5.svg) no-repeat center center;
+		padding: 15px;
+
+		img {
+			width: 395px;
+			height: 395px;
+			border-radius: 100%;
+		}
+	}
+}
+
+.gallery {
+	padding: 75px 30px 70px;
+
+	&__title {
+		margin-bottom: 65px;
+	}
+}
+
+.button-prev,
+.button-next {
+	width: 60px;
+	height: 60px;
+	background-color: $mainGreen;
+	border-radius: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	z-index: 99;
+}
+
+.button-prev {
+	background-image: url(./img/arrow\ r.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	left: 2%;
+}
+.button-next {
+	background-image: url(./img/arrow\ l.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	right: 2%;
 }
