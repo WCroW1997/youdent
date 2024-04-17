@@ -22,6 +22,7 @@
 
 body {
   font-family: "Mariupol", sans-serif;
+  background: #fff;
 }
 
 a {
@@ -55,4 +56,88 @@ a {
 .aside a {
   color: #fff;
   font-size: 17px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.header__links {
+  display: flex;
+  gap: 11px;
+}
+.header__lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 55px;
+}
+.nav__list a {
+  display: flex;
+  font-family: "Mariupol", sans-serif;
+  color: #131313;
+  font-size: 17px;
+  padding-bottom: 5px;
+  transition: all 0.1s ease;
+  transform: scale(1);
+}
+.nav__list a:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid #131313;
+}
+
+.links {
+  border-radius: 100%;
+  background: #131c26;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: url(./img/slider-h2-bg\ 2.jpg) no-repeat center center;
+}
+.hero__container {
+  padding: 124px 0 165px;
+}
+.hero__text {
+  max-width: 800px;
+}
+.hero__text h1 {
+  font-family: "Days One", sans-serif;
+  font-size: 64px;
+  line-height: 150%;
+}
+.hero__desc {
+  margin: 28px 0 65px;
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 680px;
+}
+
+.btn {
+  color: #fff;
+  background: #b7ca39;
+  border-radius: 50px;
+  border: none;
+  padding: 24px 48px;
+  font-family: "Mariupol", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

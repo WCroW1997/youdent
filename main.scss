@@ -37,6 +37,7 @@ $textColor: #012030;
 
 body {
 	font-family: $fontsMain;
+	background: $mainWhite;
 }
 
 a {
@@ -80,4 +81,113 @@ a {
 		color: $mainWhite;
 		font-size: 17px;
 	}
+}
+
+.header {
+	// .header__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 14px 0;
+	}
+
+	// .header__menu
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: 36px;
+	}
+
+	// .header__links
+
+	&__links {
+		display: flex;
+		gap: 11px;
+	}
+
+	&__lang {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+.nav {
+	// .nav__list
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style-type: none;
+		gap: 55px;
+
+		a {
+			display: flex;
+			font-family: $fontsMain;
+			color: #131313;
+			font-size: 17px;
+			padding-bottom: 5px;
+			transition: all 0.1s ease;
+			transform: scale(1);
+
+			&:hover {
+				transform: scale(1.1);
+				border-bottom: 2px solid #131313;
+			}
+		}
+	}
+}
+
+.links {
+	border-radius: 100%;
+	background: $mainDark;
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero {
+	background: url(./img/slider-h2-bg\ 2.jpg) no-repeat center center;
+	// .hero__container
+
+	&__container {
+		padding: 124px 0 165px;
+	}
+
+	// .hero__text
+	&__text {
+		max-width: 800px;
+
+		h1 {
+			font-family: $fontsOne;
+			font-size: 64px;
+			line-height: 150%;
+		}
+	}
+
+	// .hero__desc
+
+	&__desc {
+		margin: 28px 0 65px;
+		font-size: 18px;
+		line-height: 150%;
+		max-width: 680px;
+	}
+}
+
+.btn {
+	color: $mainWhite;
+	background: $mainGreen;
+	border-radius: 50px;
+	border: none;
+	padding: 24px 48px;
+	font-family: $fontsMain;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
 }
