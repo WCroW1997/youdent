@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+@font-face {
+  font-family: "Mariupol";
+  src: url(./font/Mariupol-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Mariupol";
+  src: url(./font/Mariupol-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Mariupol";
+  src: url(./font/Mariupol-Medium.ttf);
+  font-weight: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mariupol", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Mariupol", sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aside {
+  background: url("./img/waveBgAside.svg") no-repeat center center, #131c26;
+}
+.aside__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+.aside__mail {
+  display: flex;
+  gap: 11px;
+}
+.aside__phones, .aside__phone {
+  display: flex;
+  gap: 24px;
+}
+.aside a {
+  color: #fff;
+  font-size: 17px;
+}/*# sourceMappingURL=main.css.map */

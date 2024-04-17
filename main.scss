@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+@font-face {
+	font-family: 'Mariupol';
+	src: url(./font/Mariupol-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Mariupol';
+	src: url(./font/Mariupol-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Mariupol';
+	src: url(./font/Mariupol-Medium.ttf);
+	font-weight: 600;
+}
+
+//   ========== Variable ========
+
+$fontsOne: 'Days One', sans-serif;
+$fontsMain: 'Mariupol', sans-serif;
+$mainWhite: #fff;
+$mainDark: #131c26;
+$mainGreen: #b7ca39;
+$blockGray: #f6f7f9;
+$textColor: #012030;
+
+//
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $fontsMain;
+}
+
+a {
+	text-decoration: none;
+	font-family: $fontsMain;
+}
+
+.container {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.aside {
+	background: url('./img/waveBgAside.svg') no-repeat center center, $mainDark;
+	// .aside__container
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 22px 0;
+	}
+
+	// .aside__mail
+
+	&__mail {
+		display: flex;
+		gap: 11px;
+	}
+
+	// .aside__phones
+
+	&__phones,
+	&__phone {
+		display: flex;
+		gap: 24px;
+	}
+
+	a {
+		color: $mainWhite;
+		font-size: 17px;
+	}
+}
