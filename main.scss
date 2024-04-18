@@ -257,6 +257,7 @@ a {
 		line-height: 200%;
 		font-weight: 400;
 		font-style: normal;
+		text-transform: uppercase;
 	}
 }
 
@@ -344,4 +345,57 @@ a {
 	background-repeat: no-repeat;
 	background-position: center center;
 	right: 2%;
+}
+
+.review {
+	// .review__wrapper
+
+	&__title {
+		margin-bottom: 55px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		background: $mainDark;
+		color: $mainWhite;
+		gap: 45px;
+	}
+
+	// .review__text
+
+	&__text {
+		max-width: 585px;
+		p {
+			font-size: 18px;
+			line-height: 135%;
+			font-weight: 500;
+			margin-bottom: 12px;
+		}
+	}
+
+	&__stars {
+		margin-bottom: 22px;
+	}
+
+	// .review__author
+
+	&__author {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	// .review__label
+
+	&__label {
+		font-size: 18px;
+		color: #314357;
+	}
+}
+
+.qute {
+	width: 85px;
+	height: 65px;
+	background: url(./img/qute.svg) no-repeat center center;
+	margin-bottom: 50px;
 }
