@@ -33,3 +33,22 @@ const swiper2 = new Swiper('.swiper2', {
     // And if we need scrollbar
 
 });
+
+const swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    // direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 20,
+    // If we need pagination
+
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.blog__button-next',
+        prevEl: '.blog__button-prev',
+    },
+
+    // And if we need scrollbar
+
+});

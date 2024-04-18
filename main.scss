@@ -399,3 +399,64 @@ a {
 	background: url(./img/qute.svg) no-repeat center center;
 	margin-bottom: 50px;
 }
+
+.blog {
+	padding: 50px 0 80px;
+	position: relative;
+	// .blog__title
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	.swiper-wrapper {
+		max-width: 1320px;
+		margin: 0 auto;
+		align-items: stretch;
+	}
+
+	// .blog__card
+
+	&__card {
+		box-shadow: 0 4px 25px 0 rgba(19, 28, 38, 0.1);
+		flex-basis: 30%;
+		border-radius: 5px;
+		max-width: 427px;
+		width: 100%;
+
+		&_text {
+			max-width: 100%;
+			padding: 23px 30px 48px 24px;
+
+			h3 {
+				font-family: $fontsOne;
+				font-size: 25px;
+				font-weight: 400;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 155%;
+				margin-bottom: 25px;
+			}
+
+			a {
+				text-transform: uppercase;
+				color: $mainGreen;
+				padding-bottom: 10px;
+				border-bottom: 2px solid $mainGreen;
+			}
+		}
+	}
+
+	&__button-prev,
+	&__button-next {
+		background-color: $mainDark;
+	}
+}
+
+.swiper3 {
+	width: 1320px;
+	padding-bottom: 20px;
+}
