@@ -494,4 +494,65 @@ a {
 }
 .price table td:last-child {
   width: 4%;
+}
+
+.aboutUs {
+  padding: 25px 0 70px;
+}
+.aboutUs__title {
+  margin-bottom: 15px;
+}
+.aboutUs__subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.aboutUs p {
+  font-size: 18px;
+  line-height: 145%;
+  margin-bottom: 20px;
+}
+.aboutUs__gallery {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact {
+  padding: 25px 0 175px;
+}
+.contact__title {
+  margin-bottom: 15px;
+}
+.contact__zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+.contact__box {
+  padding: 45px 60px;
+  max-width: 420px;
+  flex-basis: 33%;
+  border-radius: 5px;
+  background: #f6f7f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.contact .aside__phone, .contact .aside__mail {
+  align-items: center;
+}
+.contact .aside__phone a,
+.contact .aside__phone p, .contact .aside__mail a,
+.contact .aside__mail p {
+  font-size: 19px;
+  font-weight: 600;
+  color: #012030;
+}
+.contact .aside__phone img, .contact .aside__mail img {
+  width: 18px;
 }/*# sourceMappingURL=main.css.map */
