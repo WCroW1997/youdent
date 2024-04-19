@@ -555,4 +555,18 @@ a {
 }
 .contact .aside__phone img, .contact .aside__mail img {
   width: 18px;
+}
+
+.blog-page {
+  padding: 45px 0;
+}
+.blog-page__title {
+  margin-bottom: 50px;
+}
+.blog-page__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px 15px;
 }/*# sourceMappingURL=main.css.map */

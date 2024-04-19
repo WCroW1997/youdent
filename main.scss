@@ -744,3 +744,25 @@ a {
 		}
 	}
 }
+
+//  ==================== blog.html styles ====================
+
+.blog-page {
+	padding: 45px 0;
+
+	// .blog-page__title
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	// .blog-page__wrapper
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		gap: 30px 15px;
+	}
+}
