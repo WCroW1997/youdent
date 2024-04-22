@@ -500,7 +500,7 @@ a {
   border-radius: 5px;
 }
 .price table td:last-child {
-  width: 4%;
+  width: 8%;
 }
 
 .aboutUs {
@@ -537,6 +537,9 @@ a {
   align-items: stretch;
   gap: 30px;
   margin-bottom: 25px;
+}
+.contact__img {
+  width: 100%;
 }
 .contact__box {
   padding: 45px 60px;
@@ -591,6 +594,11 @@ a {
   .swiper3 {
     width: 90%;
   }
+  .aboutUs__gallery {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 1240px) {
   .nav__list {
@@ -634,6 +642,16 @@ a {
     width: 60px;
     background-size: contain;
     margin-bottom: 20px;
+  }
+  .contact__zone {
+    flex-wrap: wrap;
+  }
+  .contact__box {
+    max-width: 100%;
+    flex-basis: 48%;
+  }
+  .contact__box:first-child {
+    flex-basis: 100%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -766,6 +784,15 @@ a {
   .footer__zone {
     flex-basis: 48%;
   }
+  .aboutUs__gallery img {
+    width: 100%;
+  }
+  .aboutUs__gallery img:nth-child(2), .aboutUs__gallery img:nth-child(3) {
+    width: 48%;
+  }
+  .contact__box {
+    flex-basis: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .aside__container {
@@ -828,6 +855,28 @@ a {
   .blog__card img {
     width: 100%;
   }
+  .aboutUs__gallery img:nth-child(2), .aboutUs__gallery img:nth-child(3) {
+    width: 100%;
+  }
+  .price summary::after {
+    top: 60%;
+  }
+  .price details[open] summary::after {
+    top: 13%;
+  }
+  .price__card {
+    padding: 40px 20px 40px 30px;
+  }
+  .price__card p {
+    width: 50%;
+  }
+  .price__card_box {
+    right: 50px;
+    padding: 20px;
+  }
+  .price table td:last-child {
+    width: 15%;
+  }
 }
 @media screen and (max-width: 425px) {
   .services__card {
@@ -835,5 +884,12 @@ a {
   }
   .services__card_box {
     padding: 20px;
+  }
+  .price__warning {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price__warning img {
+    width: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
